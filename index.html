@@ -5,20 +5,71 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Brax Engenharia — Consultoria e Projetos</title>
 <meta name="description" content="Brax Engenharia Consultoria e Projetos — soluções em engenharia civil, elétrica e mecânica no Rio de Janeiro.">
+<link rel="canonical" href="https://goncales12z.github.io/Brax-Eng/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#14202E">
+
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brax Engenharia — Consultoria e Projetos">
+<meta property="og:description" content="Engenharia civil, elétrica e mecânica no Rio de Janeiro, conduzida com ética, transparência e uma equipe qualificada.">
+<meta property="og:image" content="img/og-image.jpg">
+<meta property="og:url" content="https://goncales12z.github.io/Brax-Eng/">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Brax Engenharia — Consultoria e Projetos">
+<meta name="twitter:image" content="img/og-image.jpg">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Brax Engenharia Consultoria e Projetos",
+  "image": "https://goncales12z.github.io/Brax-Eng/img/og-image.jpg",
+  "url": "https://goncales12z.github.io/Brax-Eng/",
+  "telephone": "+5521983943349",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Rio Branco, 181",
+    "addressLocality": "Rio de Janeiro",
+    "addressRegion": "RJ",
+    "postalCode": "20040-918",
+    "addressCountry": "BR"
+  },
+  "areaServed": "Rio de Janeiro",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "18:00" }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "3" }
+}
+</script>
 </head>
 <body>
 
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
 <header>
   <nav class="wrap">
-    <div class="brand">
-      <strong>BRAX</strong>
-      <span>Engenharia · Consultoria e Projetos</span>
-    </div>
+    <a href="#" class="brand">
+      <picture>
+        <source srcset="img/brax-icon.webp" type="image/webp">
+        <img src="img/brax-icon.png" alt="Brax Engenharia" class="brand-icon" width="42" height="42">
+      </picture>
+      <span class="brand-text">
+        <strong>BRAX</strong>
+        <small>Engenharia · Consultoria e Projetos</small>
+      </span>
+    </a>
     <div class="nav-links" id="navLinks">
       <a href="#sobre">Sobre</a>
       <a href="#servicos">Serviços</a>
@@ -26,11 +77,27 @@
       <a href="#depoimentos">Depoimentos</a>
       <a href="#contato" class="nav-cta">Solicitar orçamento</a>
     </div>
-    <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+    <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-controls="mobileMenu" aria-expanded="false"><span></span></button>
   </nav>
 </header>
 
-<section class="hero">
+<div class="mobile-menu" id="mobileMenu">
+  <nav aria-label="Menu principal">
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#diferenciais">Diferenciais</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#contato" class="mm-cta">Solicitar orçamento</a>
+  </nav>
+  <div class="mm-footer">
+    <a href="tel:+5521983943349">(21) 98394-3349</a>
+    <a href="https://wa.me/5521983943349" target="_blank" rel="noopener">Falar no WhatsApp</a>
+  </div>
+</div>
+
+<main>
+
+<section class="hero" id="inicio">
   <div class="wrap hero-grid">
     <div>
       <div class="hero-eyebrow">Rio de Janeiro · RJ</div>
@@ -48,15 +115,10 @@
     </div>
     <div>
       <svg class="blueprint" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Esquema técnico de uma estrutura predial">
-        <!-- base structure -->
         <path class="draw" d="M60 340 L60 120 L210 40 L360 120 L360 340 Z"/>
-        <!-- floor lines -->
         <path class="draw delay1" d="M60 260 L360 260 M60 190 L360 190"/>
-        <!-- roof truss -->
         <path class="draw delay1" d="M60 120 L210 40 L360 120 M130 82 L130 120 M290 82 L290 120"/>
-        <!-- vertical supports -->
         <path class="draw delay2" d="M130 340 L130 190 M210 340 L210 120 M290 340 L290 190"/>
-        <!-- foundation / dimension line -->
         <path class="draw accent delay3" d="M50 360 L370 360 M50 355 L50 365 M370 355 L370 365"/>
         <text class="dim-text" x="175" y="378">21.400 mm</text>
         <text class="dim-text" x="20" y="230" transform="rotate(-90 20 230)">H = 8.200 mm</text>
@@ -65,7 +127,7 @@
   </div>
 </section>
 
-<section class="about" id="sobre">
+<section class="about reveal" id="sobre">
   <div class="wrap">
     <div class="section-head">
       <div>
@@ -88,7 +150,7 @@
   </div>
 </section>
 
-<section class="services" id="servicos">
+<section class="services reveal" id="servicos">
   <div class="wrap">
     <div class="section-head">
       <div>
@@ -99,7 +161,7 @@
     </div>
     <div class="svc-grid">
       <div class="svc-card">
-        <svg viewBox="0 0 48 48" fill="none" stroke-width="1.4"><path d="M8 40V18l16-10 16 10v22"/><path d="M14 40V24h20v16"/><path d="M8 26h32"/></svg>
+        <svg viewBox="0 0 48 48" fill="none" stroke-width="1.4" aria-hidden="true"><path d="M8 40V18l16-10 16 10v22"/><path d="M14 40V24h20v16"/><path d="M8 26h32"/></svg>
         <h3>Engenharia Civil</h3>
         <p>Projetos estruturais, análise de viabilidade e acompanhamento técnico de obras.</p>
         <ul>
@@ -109,7 +171,7 @@
         </ul>
       </div>
       <div class="svc-card">
-        <svg viewBox="0 0 48 48" fill="none" stroke-width="1.4"><path d="M26 4L12 26h10l-4 18 18-24H16"/></svg>
+        <svg viewBox="0 0 48 48" fill="none" stroke-width="1.4" aria-hidden="true"><path d="M26 4L12 26h10l-4 18 18-24H16"/></svg>
         <h3>Engenharia Elétrica</h3>
         <p>Projetos e adequações de instalações elétricas prediais e industriais.</p>
         <ul>
@@ -119,7 +181,7 @@
         </ul>
       </div>
       <div class="svc-card">
-        <svg viewBox="0 0 48 48" fill="none" stroke-width="1.4"><circle cx="24" cy="24" r="7"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6M10.8 10.8l4.2 4.2M33 33l4.2 4.2M10.8 37.2l4.2-4.2M33 15l4.2-4.2"/></svg>
+        <svg viewBox="0 0 48 48" fill="none" stroke-width="1.4" aria-hidden="true"><circle cx="24" cy="24" r="7"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6M10.8 10.8l4.2 4.2M33 33l4.2 4.2M10.8 37.2l4.2-4.2M33 15l4.2-4.2"/></svg>
         <h3>Engenharia Mecânica</h3>
         <p>Sistemas mecânicos, instalações hidráulicas e climatização predial e industrial.</p>
         <ul>
@@ -132,7 +194,7 @@
   </div>
 </section>
 
-<section class="principles" id="diferenciais">
+<section class="principles reveal" id="diferenciais">
   <div class="wrap">
     <div class="section-head">
       <div>
@@ -162,7 +224,7 @@
   </div>
 </section>
 
-<section class="testimonials" id="depoimentos">
+<section class="testimonials reveal" id="depoimentos">
   <div class="wrap">
     <div class="section-head">
       <div>
@@ -174,17 +236,17 @@
     <div class="quote-grid">
       <div class="quote">
         <p class="text">"Uma empresa séria, profissional e comprometida com o cliente."</p>
-        <div class="attr"><span class="stars">★★★★★</span><span>Avaliação no Google</span></div>
+        <div class="attr"><span class="stars" aria-hidden="true">★★★★★</span><span>Avaliação no Google</span></div>
       </div>
       <div class="quote">
         <p class="text">"Muito profissionais, interessados em resolver o problema de fato dos clientes."</p>
-        <div class="attr"><span class="stars">★★★★★</span><span>Avaliação no Google</span></div>
+        <div class="attr"><span class="stars" aria-hidden="true">★★★★★</span><span>Avaliação no Google</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="contact" id="contato">
+<section class="contact reveal" id="contato">
   <div class="wrap">
     <div class="section-head">
       <div>
@@ -220,7 +282,7 @@
         <h3>Solicitar orçamento</h3>
         <p>Descreva o projeto e a equipe entra em contato para entender o escopo.</p>
         <form onsubmit="event.preventDefault(); window.location.href='https://wa.me/5521983943349?text=' + encodeURIComponent('Olá, meu nome é ' + this.nome.value + '. Gostaria de um orçamento: ' + this.mensagem.value);">
-          <div class="field"><label for="nome">Nome</label><input id="nome" name="nome" required></div>
+          <div class="field"><label for="nome">Nome</label><input id="nome" name="nome" required autocomplete="name"></div>
           <div class="field"><label for="mensagem">Descrição do projeto</label><textarea id="mensagem" name="mensagem" required></textarea></div>
           <button type="submit" class="btn btn-primary">Enviar pelo WhatsApp</button>
         </form>
@@ -229,15 +291,21 @@
   </div>
 </section>
 
+</main>
+
 <footer>
-  <div class="wrap">
-    <span><strong>Brax Engenharia</strong> Consultoria e Projetos</span>
+  <div class="wrap footer-wrap">
+    <picture>
+      <source srcset="img/brax-logo-full.webp" type="image/webp">
+      <img src="img/brax-logo-full.png" alt="Brax Engenharia" class="footer-logo" width="168" height="137" loading="lazy">
+    </picture>
     <span>© 2026 — Todos os direitos reservados</span>
   </div>
 </footer>
 
-<script src="js/main.js" defer></script>
+<button id="toTop" class="to-top" aria-label="Voltar ao topo">↑</button>
 
+<script src="js/main.js" defer></script>
 
 </body>
 </html>
